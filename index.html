@@ -1,242 +1,144 @@
 <!DOCTYPE html>
-<html>
-
-<!-- SECTION: Head -->
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+
+    <!-- MARK: Meta Datas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- MARK: Editable Meta Datas -->
     <meta name="author" content="Berkin Ceylan">
     <meta name="description" content="personal webpage">
-    <meta name="keywords" content="web,html,css">
+    <meta name="keywords" content="creative, development, design">
 
     <!-- MARK: Page Title -->
-    <title>Berkin Ceylan's Blog Webpage</title>
+    <title>Ana Sayfa - Berkin C</title>
+
+    <!-- MARK: Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <!-- MARK: CSS -->
-    <style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-        *{
-            font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !important;
-        }
-
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-        #section_date{
-            font-size: 14px;
-            line-height: 1.28577;
-            font-weight: 600;
-            letter-spacing: -.016em;
-
-            color: #6e6e73;
-
-            padding-top:50px;
-            padding-bottom: 10px;
-        }
-
-        #section_heading{
-            font-size: 36px;
-            line-height: 1.08349;
-            font-weight: 700;
-            letter-spacing: -.003em;
-
-            padding-bottom: 30px;
-        }
-
-        #section_subheading{
-            font-size: 19px;
-            line-height: 1.4211;
-            font-weight: 400;
-            letter-spacing: .012em;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-        #section_button{
-            font-size: 19px;
-            line-height: 1.4211;
-            font-weight: 400;
-            letter-spacing: .012em;
-            padding-bottom: 10px;
-        }
-
-        #section_button_last{
-            font-size: 19px;
-            line-height: 1.4211;
-            font-weight: 400;
-            letter-spacing: .012em;
-            padding-bottom: 50px;
-        }
-
-        #sidebar_button{
-            font-size: 17px;
-            line-height: 1.4211;
-            font-weight: 400;
-            letter-spacing: .012em;
-            padding-top: 20px;
-
-        }
-
-        #sidebar_heading{
-            font-size: 24px;
-            line-height: 1.08349;
-            font-weight: 700;
-            letter-spacing: -.003em;
-
-            padding-bottom: 30px;
-        }
-
-        #sidebar_subheading{
-            font-size: 17px;
-            line-height: 1.4211;
-            font-weight: 400;
-            letter-spacing: .012em;
-
-            position: fixed;
-            padding-right: 30px;
-            padding-top: 20px;
-        }
-
-        #section1{
-            color: #0A0A0A;
-            background-color: #FAFAFA;
-            margin: auto;
-            padding-left: 450px;
-            padding-right: 450px;
-        }
-
-        #section2{
-            color: #FAFAFA;
-            background-color: #0A0A0A;
-            margin: auto;
-            padding-left: 450px;
-            padding-right: 450px;
-        }
-
-        #section3{
-            color: #0A0A0A;
-            background-color: #FAFAFA;
-            margin: auto;
-            padding-left: 450px;
-            padding-right: 450px;
-        }
-
-        img{
-            border-radius: 10px;
-        }
-
-        a{
-            color: #268AE9;
-            text-decoration: none;
-        }
-
-        aside{
-            float: right;
-        }
-
-    </style>
 </head>
-
-<!-- SECTION: Body -->
 <body>
 
-    <!-- MARK: Section 1 -->
-    <div id="section1">
+    <!-- MARK: Container -->
+    <div class="container">
 
-        <!-- MARK: Date -->
-        <div id="section_date">
-            <p>MART 26, 2021</p>
+        <!-- MARK: Header -->
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            
+            <!-- Logo -->
+            <a href="/Homework_Final/mainpage.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <span class="fs-4 fw-bold">Berkin Ceylan.</span>
+            </a>
+            
+            <!-- Pages -->
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/Homework_Final/mainpage.html" class="nav-link px-2 link-secondary">Ana Sayfa</a></li>
+                <li><a href="/Homework_Final/links.html" class="nav-link px-2 link-dark">Bağlantılar</a></li>
+                <li><a href="/Homework_Final/about.html" class="nav-link px-2 link-dark">Hakkımda</a></li>
+            </ul>
+
+            <!-- Buttons -->
+            <div class="col-md-3 text-end">
+                <a class="btn btn-outline-primary me-2" href="https://www.linkedin.com/in/berkinceylan" role="button">Linkedln ile keşfet</a>
+                <a class="btn btn-primary" href="/Homework_Final/connect.html" role="button">İletişime Geç</a>
+            </div>
+
+        </header>
+        
+         <!-- MARK: Hero -->
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+
+            <!-- Title -->
+            <h1 class="display-5 fw-bold">Bir yakından bakın, beni daha iyi tanıyın.</h1>
+
+            <!-- Subtitle -->
+            <div class="col-lg-6 mx-auto">
+                <p class=" mb-4 fs-4 ">Merhaba, ben Berkin. İstanbul Arel Üniversitesi Bilgisayar Mühendisliği bölümü öğrencisiyim. Her zaman tutkusu olduğum teknolojileri paylaşıyorum.</p>
+                
+                <!-- Button -->
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/Homework/about.html" role="button">Daha fazla bilgi alın</a>
+                    <a class="btn btn-outline-secondary btn-lg px-4" href="mailto:selhanberkinceylan@hotmail.com" role="button">Mail ile iletişime geçin</a>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="overflow-hidden" style="max-height: 40vh;">
+                <div class="container px-5">
+                    <img src="https://miro.medium.com/max/3150/1*kOYEbg1kRjfaGPoWdQhrxg.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                </div>
+            </div>
+
         </div>
 
-        <!-- MARK: Heading -->
-        <div id="section_heading">
-            <p>Beyti Kebabı</p>
+        <!-- Block Title -->
+        <h2>Çalışmalarım</h2>
+
+        <!-- Space -->
+        <br>
+
+        <!-- BLOCK: Works -->
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+
+                <!-- Title -->
+                <h2>Ventence</h2>
+
+                <!-- Subtitle -->
+                <p class="col-md-8 fs-4">Apple'ın sihirli dünyasını ve güncel teknoloji haberlerini takip edin, geleceğin dünyasını ve dijital yaşam kültürünü Ventence ile keşfedin.</p>
+                
+                <!-- Button -->
+                <a class="btn btn-primary btn-lg" href="https://www.ventence.com" role="button">Hemen keşfedin</a>
+            </div>
         </div>
         
-        <img src="https://i4.hurimg.com/i/hurriyet/75/1200x675/5c90fb05c03c0e50a4dce6c4.jpg" width=750 alt="Beyti Kebabı">
+        <div class="row align-items-md-stretch">
 
-        <!-- MARK: Subheading -->
-        <div id="section_subheading">
-            <p>Beyti kebabı, Türk mutfağında kuzu etinden yapılan ve yoğurtla servis edilen bir kebap türüdür. Adını Beyti restoranının kurucusu Beyti Güler'den almıştır. Beyti Güler, 1961'deki İsviçre seyahatinde Möller'in et yapma şeklinden etkilenerek bu kebabı üretmiştir.</p>
+            <!-- Grid - 1 -->
+            <div class="col-md-6  mb-4">
+                <div class="h-100 p-5 text-white bg-dark rounded-3">
+                    
+                    <!-- Title -->
+                    <h2>TurkishKit</h2>
+
+                    <!-- Subtitle -->
+                    <p>TurkishKit; Apple platformlarında kodlama, dijital tasarım ve yaratıcılık alanlarında eğitici dijital içerikler yayınlar, etkinlik ve eğitimler düzenler. Hem kod yazmaya yeni başlayanların hem de profesyonellerin ortak programlama dili ile harikalar yaratmayı burada öğrenin.</p>
+                    
+                    <!-- Button -->
+                    <a class="btn btn-outline-light" href="https://www.instagram.com/turkish.kit/" role="button">Güncel eğitime göz atın</a>
+                </div>
+            </div>
+            
+            <!-- Grid - 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="h-100 p-5 bg-light border rounded-3">
+
+                    <!-- Title -->
+                    <h2>Hangi Üniversite Hangi Bölüm</h2>
+                    
+                    <!-- Subtitle -->
+                    <p>Hangi Üniversite Hangi Bölüm, üniversite öğrencileri ile aday öğrencileri birleştiren; aday öğrencinin hayalindeki üniversite ve bölümü keşfetmesini sağlayan bir web platformudur. Berkin Ceylan'da İstanbul Arel Üniversitesi Bilgisayar Mühendisliği bölümünü anlatarak aday öğrencilere destek oldu.</p>
+                    
+                    <!-- Button -->
+                    <a class="btn btn-outline-secondary" href="https://www.youtube.com/watch?v=gJ9IIaphnv8" role="button">Röpotajı izleyin</a>
+                </div>
+            </div>
         </div>
 
-        <!-- MARK: Button -->
-        <div id="section_button">
-            <a href="https://tr.wikipedia.org/wiki/Beyti_kebabı" target="_blank">Daha fazla bilgi ></a> 
-        </div>
+        <!-- Footer -->
+        <footer class="pt-3 mt-4 text-muted border-top mb-5">
+            &copy; Berkin Ceylan, 2021.
+        </footer>
 
-        <!-- MARK: Button -->
-        <div id="section_button">
-            <a href="https://www.google.com.tr/maps/search/Beyti+Sarma/@41.0094249,28.6852555,14z/data=!3m1!4b1" target="_blank">En iyi restoranlar ></a> 
-        </div>
-
-        <!-- MARK: Button -->
-        <div id="section_button_last">
-            <a href="https://eksisozluk.com/beyti-kebabi--56102" target="_blank">Yorumlar ></a> 
-        </div>
+        <!-- MARK: Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     </div>
-
-    <!-- MARK: Section 2 -->
-    <div id="section2">
-
-        <!-- MARK: Date -->
-        <div id="section_date">
-            <p>MART 25, 2021</p>
-        </div>
-
-        <!-- MARK: Heading -->
-        <div id="section_heading">
-            <p>Voleybol</p>
-        </div>
-        
-        <img src="https://i2.milimaj.com/i/milliyet/75/1200x675/5db09ce855427e13286ff8aa.jpg" width=750 alt="Voleyvol">
-
-        <!-- MARK: Subheading -->
-        <div id="section_subheading">
-            <p>Voleybol, file ile ikiye bölünmüş bir oyun alanı üzerinde altı kişilik iki takım ile oynanan bir spor dalıdır. Oyunun amacı, topu filenin üzerinden göndererek rakip takımın oyun alanına topun değmesini sağlamak ve rakip takımın aynı amaca ulaşmasını ise önlemektir.</p>
-        </div>
-
-        <!-- MARK: Button -->
-        <div id="section_button_last">
-            <a href="https://www.youtube.com/watch?v=7UHpC7pw1jc" target="_blank">Hemen izleyin ></a> 
-        </div>
-
-    </div>
-
-       <!-- MARK: Section 3 -->
-       <div id="section3">
-
-        <!-- MARK: Date -->
-        <div id="section_date">
-            <p>MART 20, 2021</p>
-        </div>
-
-        <!-- MARK: Heading -->
-        <div id="section_heading">
-            <p>Gumball</p>
-        </div>
-        
-        <img src="https://tva.onscreenasia.com/wp-content/uploads/2016/06/Cartoon-Network-The-Amazing-World-of-Gumball.jpg" width=750 alt="Voleyvol">
-
-        <!-- MARK: Subheading -->
-        <div id="section_subheading">
-            <p>Gumball, Ben Bocquelet tarafından yapılmış çizgi filmdir. İlk gösterimini Birleşik Krallık'ta 2 Mayıs 2011'de, Amerika Birleşik Devletleri'nde 3 Mayıs 2011'de, Türkiye'de ise 1 Kasım 2011'de Cartoon Network'te yapmıştır. Çizgi dizi, Elmore şehrindeki 12 yaşındaki Gumball Watterson adındaki mavi bir kedinin, Darwin Watterson adındaki turuncu bir balığın ve ailesinin başından geçen konuları ele alır.</p>
-        </div>
-
-        <!-- MARK: Button -->
-        <div id="section_button_last">
-            <a href="https://www.youtube.com/watch?v=cK0pfSFRoQ4" target="_blank">Hemen izleyin ></a> 
-        </div>
-
-    </div>
-
+    
 </body>
 </html>
