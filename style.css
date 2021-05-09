@@ -2,4 +2,46 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 600;
     line-height: 1.4211;
     letter-spacing: .012em;
+    color:white;
 }
+
+body{
+    background-color: black;
+}
+
+.container {
+    padding-right: 0px; 
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-right: 25px; 
+    padding-left: 25px;
+}
+
+.card1 {
+    height: 556px;
+    width: 325px;
+    border-radius: 10px;
+    background-color: #151515;
+    margin-top: 15px;
+  }
+
+  .card2 {
+    height: 303px;
+    width: 325px;
+    border-radius: 10px;
+    background-color: #151515;
+    margin-top: 15px;
+  }
+
+  .iPhone50{
+    padding: 50px;
+  }
+
+  .iPhone25{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
