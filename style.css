@@ -15,8 +15,8 @@ body{
     margin-right: auto;
     margin-left: auto;
 
-    padding-right: 25px; 
-    padding-left: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .card1 {
@@ -25,24 +25,20 @@ body{
     margin-top: 15px;
   }
 
-  .card2 {
-    border-radius: 10px;
-    background-color: #151515;
-    margin-top: 15px;
-  }
-
   .iPhone50{
-    padding: 50px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align:center;
+    padding-right: 15px;
   }
 
-  .iPhone25{
-    padding: 25px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
-  }
+.d1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.d2 {
+  padding-top: 4px;
+  padding-left: 10px;
+  border-radius: 30px;
+}
