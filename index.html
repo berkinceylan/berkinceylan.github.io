@@ -33,7 +33,10 @@
     <header>
       <div class="d-flex flex-column flex-md-row pb-3 mb-4 border-bottom">
         <a href="/" class="d-flex text-dark text-decoration-none">
-          <img src="/images/logo.png" height="30" alt="Berko logo">
+          <picture>
+            <source srcset="/images/logolight.svg" media="(prefers-color-scheme: light)">
+            <img alt="Berko logo" height="30" src="/images/logodark.svg">
+          </picture>
         </a>
       </div>
     </header>
