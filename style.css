@@ -25,6 +25,45 @@ body{
     margin-top: 15px;
   }
 
+  .card-subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+    text-transform: uppercase;
+    color: gray;
+  }
+
+  .card-body {
+      background-color: #f2f2f7;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+  }
+
+  .card {
+    border: none !important;
+    border-radius: 10px;
+  }
+  
+  a:link {
+  text-decoration: none;
+  }
+  
+  .card-title {
+  color: black;
+  }
+
+  .card-img {
+    height: 250px;
+    object-fit: cover;
+    background-color: #0a0a0a;
+
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+
   .iPhone50{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -53,4 +92,17 @@ body{
   .card1 {
     background-color: #f2f2f7;
   } 
+}
+
+.news {
+  background-color: black;
+}
+
+.news-title h2 {
+  color: white;
+}
+
+.news-subtitle h6 {
+  text-transform: uppercase;
+  color: #FF375F;
 }
