@@ -52,5 +52,132 @@
         <h2>TikTok Downloader</h2>
 </div>
     
+    
+    
+        <div class='col-xs-12' id='search-bar'>
+        <div class='col-xs-6 col-xs-offset-3'>
+            <h2 class='text-center'>TikTok JS Downloader</h2>
+            <div class='input-group input-group-lg'>
+                <input class='form-control' placeholder='Enter TikTok video URL ...' type='text'>
+                <span class='input-group-btn'>
+                    <button class='btn btn-default' id='search-btn' title=' Search ' type='button'>
+                        <span class='glyphicon glyphicon-search text-primary'></span>
+                    </button>
+
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class='col-xs-8 col-xs-offset-2' id='welcome'>
+        <h1 class='text-center text-primary'>Enter TikTok video URL to start downloading</h1>
+    </div>
+    <div class='col-xs-12' id='result-area'>
+        <div class='col-xs-8 col-xs-offset-2 result' id='result-base'>
+            <div class='col-xs-1 result-text text-center text-primary'>MP4</div>
+            <div class='col-xs-11'>
+                <div class='btn btn-group-justified'>
+                    <span class='btn btn-primary' id="download_video">
+                        <span class='result-download-video'></span>
+                        <span class='glyphicon glyphicon-download pull-right'></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class='col-xs-8 col-xs-offset-2 result' id='result-base'>
+            <div class='col-xs-1 result-text text-center text-primary'>MP3</div>
+            <div class='col-xs-11'>
+                <div class='btn btn-group-justified'>
+                    <span class='btn btn-primary' id="download_music">
+                        <span class='result-download-music'></span>
+                        <span class='glyphicon glyphicon-download pull-right'></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div align='center' class='col-xs-12' id='loading'>
+        <span class='glyphicon glyphicon-repeat text-primary'></span>
+    </div>
+    
+    
+    
 </body>
+    
+<script>
+    var TikTok = null;
+    var oldVideoDownloadBtn = "";
+    var oldMusicDownloadBtn = "";
+    $(document).ready(function () {
+        $('#search-bar').slideDown("slow");
+
+        $('#search-btn').on("click", function () {
+            TikTok = null;
+            $('#result-area').fadeOut();
+            var url = $("input").val().trim();
+
+            if (url.toLowerCase().indexOf("tiktok.com/") < 0) {
+                $('.input-group').effect("shake");
+                return;
+            }
+
+            $('#search-btn').prop('disabled', true);
+            $('#no-result, #welcome').hide("slide", { direction: "left" }, 200);
+
+            setTimeout(function () {
+                $("#loading").fadeIn();
+                TikTok = new JSTikTok(url);
+                TikTok.get().then(function () {
+                    showDatas(TikTok.datas);
+                });
+            }, 250);
+        });
+
+        $('#download_video').on('click', function () {
+            $('.result-download-video').html('Downloading MP4 ... <span class="glyphicon glyphicon-time "></span>');
+            done("video");
+            TikTok.download_video();
+        });
+        $('#download_music').on('click', function () {
+            $('.result-download-music').html('Downloading MP3 ... <span class="glyphicon glyphicon-time "></span>');
+            done("music");
+            TikTok.download_music();
+        });
+
+
+    });
+
+    function done(type) {
+        var proxied = window.XMLHttpRequest.prototype.send;
+        window.XMLHttpRequest.prototype.send = function () {
+            var pointer = this
+            var intervalId = window.setInterval(function () {
+                if (pointer.readyState != 4) {
+                    return;
+                }
+                if (type == "video") {
+                    $('.result-download-video').text(oldVideoDownloadBtn);
+                }
+                else if (type == "music") {
+                    $('.result-download-music').text(oldMusicDownloadBtn);
+                }
+
+                clearInterval(intervalId);
+
+            }, 1);
+            return proxied.apply(this, [].slice.call(arguments));
+        };
+    }
+
+    function showDatas(datas) {
+        $('#search-btn').prop('disabled', false);
+        $("#loading").fadeOut();
+        $('#result-area').fadeIn();
+        $('.result-download-video').text(datas.video.title + " [MP4]");
+        $('.result-download-music').text(datas.video.title + " [MP3]");
+        oldVideoDownloadBtn = $('.result-download-video').text();
+        oldMusicDownloadBtn = $('.result-download-music').text();
+    }
+
+</script>
 </html>
