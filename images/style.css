@@ -1,0 +1,149 @@
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+}
+
+.rectangle {
+    height: 5px;
+    width: 10000px;
+    background-color: #FFC108;
+  }
+
+  .rectangle-small {
+    height: 5px;
+    width: 10000px;
+    background-color: #FFC108;
+  }
+
+  .card-subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+    text-transform: uppercase;
+    color: #FFC108;
+  }
+
+  .card-body {
+      background-color: #F7F7F7;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+  }
+
+  .card-img {
+    height: 250px;
+    object-fit: cover;
+    background-color: #0a0a0a;
+
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+
+  .product-description-img {
+    object-fit: cover;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+
+  .section-title {
+    font-size: 28px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+  }
+
+  .card {
+      border: none !important;
+      border-radius: 0px;
+  }
+
+  .carousel-inner, .carousel, .carousel-item, .d-block {
+    border-radius: 10px !important;
+  }
+
+  .carousel {
+      max-height: 500px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      text-align:center;
+  }
+
+  .product-card {
+    border-radius: 10px;
+    background-color: #fafafa;
+    max-height: 400px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+
+  .login-card {
+    border-radius: 10px;
+    background-color: #fafafa;
+    max-height: 400px;
+
+  }
+
+  .product-card-info {
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-height: 400px;
+  }
+
+  .product-card-img {
+    background-color: #fff;
+    max-height: 400px;
+
+    display:flex;
+    flex-direction:column;
+
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+
+  .product-description{
+    border-radius: 10px;
+    background-color: #fafafa;
+    height: 200px;
+  }
+
+  .product-card-body{
+    background-color: #F7F7F7;
+    border-radius: 10px;
+  }
+
+  .card1 {
+    border-radius: 10px;
+    background-color: #151515;
+    margin-top: 15px;
+  }
+
+  .iPhone50{
+    padding: 50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  .card-title {
+    color: black;
+  }
+
+  
