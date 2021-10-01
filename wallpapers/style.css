@@ -1,0 +1,123 @@
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+    color:white;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    padding-right: 0px; 
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card1 {
+    border-radius: 10px;
+    background-color: #1c1c1e;
+    margin-top: 15px;
+  }
+
+  .card-subtitle {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4211;
+    letter-spacing: .012em;
+    text-transform: uppercase;
+    color: gray;
+  }
+
+  .card-body {
+      background-color: #f2f2f7;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+  }
+
+  .card {
+    border: none !important;
+    border-radius: 10px;
+  }
+  
+  a:link {
+  text-decoration: none;
+  }
+  
+  .card-title {
+    color: black;
+  }
+
+  .card-img {
+    height: 250px;
+    object-fit: cover;
+    background-color: #0a0a0a;
+
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+
+  .iPhone50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align:center;
+    padding-right: 15px;
+  }
+
+.d1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.d2 {
+  padding-top: 4px;
+  padding-left: 10px;
+  border-radius: 30px;
+}
+
+.news-title h2 {
+  color: black;
+}
+
+.news-subtitle h6 {
+  text-transform: uppercase;
+  color: #FF375F;
+}
+
+.news {
+  background-color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color: black;
+  } 
+  .card1 {
+    background-color: #f2f2f7;
+  } 
+  .card-body {
+    background-color: #1c1c1e;
+  }
+  .news-title h2 {
+    color: white;
+  }
+  .card-title {
+    color: white;
+  }
+  .news-title h2 {
+    color: white;
+  }
+  .news {
+    background-color: black;
+  }
+}
