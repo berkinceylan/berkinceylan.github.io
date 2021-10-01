@@ -118,6 +118,41 @@ body{
   border-radius: 30px;
 }
 
+.headerimg {
+	height: 30px;
+}
+
 a:link {
     text-decoration: none;
   }
+
+  @media (prefers-color-scheme: light) {
+	body {
+	  background-color: white;
+	}
+	h1,h2,h3,h4,h5,h6 {
+	  color: black;
+	} 
+	.card1 {
+	  background-color: #f2f2f7;
+	} 
+	.card-body {
+	  background-color: #1c1c1e;
+	}
+	.news-title h2 {
+	  color: white;
+	}
+	.card-title {
+	  color: black;
+	}
+	.card-title-2 {
+		color: black;
+	  }
+	.news-title h2 {
+	  color: white;
+	}
+	.news {
+	  background-color: black;
+	}
+  }
+  

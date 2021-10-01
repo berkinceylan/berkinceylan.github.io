@@ -26,7 +26,7 @@
   <meta property="og:site_name" content="Berkin Ceylan's Portfolio">
   <meta property="og:locale" content="tr_TR">
   <meta name="Description" content="Hello! Here's my portfolio. Love u...">
-  <meta property="og:image" content="https://raw.githubusercontent.com/berkinceylan/berkinceylan.github.io/main/portfolio/feautred_image.png">
+  <meta property="og:image" content="feautred_image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
  
@@ -41,7 +41,10 @@
     <header>
       <div class="d-flex flex-column flex-md-row pb-3 mb-4 border-bottom">
         <a href="/" class="d-flex text-dark text-decoration-none">
-          <img src="logo.png" height="30" alt="Berko logo">
+		  <picture>
+			<source srcset="portfolio_light.svg" media="(prefers-color-scheme: light)">
+			<img class="headerimg" src="portfolio_dark.svg">
+		</picture>
         </a>
       </div>
     </header>
@@ -63,7 +66,7 @@
         <div class="col-md-6">
             <div class="card1">
                 <div class="layout1">
-                    <h6 class="card-subtitle">MEET WİTH ME</h6>
+                    <h6 class="card-subtitle">MEET WITH ME</h6>
                     <h2 class="card-title">Selhan Berkin Ceylan</h2>
                     <p>Berkin is a 21 years old content director, designer and tech editor. He is also a 4th year computer engineering student at Arel University.</p>
                     <p>Since the middle of 2018, he's worked as a copywriter and Swift blog writer in TurkishKit. 2 years ago, he selected rector student consultant in Arel University. Since 2020, he's worked as Editor in Chief in Ventence. </p>
