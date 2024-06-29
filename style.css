@@ -6,12 +6,43 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 0px;
 }
 
-.row {
+.row1 {
     --bs-gutter-x: 1rem;
+    display: flex;
+    flex-wrap: wrap; /* Satır dolduğunda yeni satıra geç */
+    justify-content: flex-start; /* Kartları sola yasla */
+    gap: 10px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.transition-line {
+  width: 2px;   
+  height: 45px;
+  background-color: #333;
+  position: relative;
+  left: 33px;  
+}
+
+.transition-line::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  left: -3px; 
+}
+
+p1{
+  color: #757575;
+  margin-bottom: 0px;
 }
 
 p{
-    color: #757575;
+    margin-bottom: 0px;
+    color: #fafafa;
 }
 
 body{
@@ -26,6 +57,14 @@ body{
 
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.bigtitle {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.4211;
+  letter-spacing: .012em;
+  color: white;
 }
 
 .card {
@@ -105,8 +144,49 @@ body{
     margin-top: 15px;
   }
 
+  .card2 {
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f234;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px; 
+    text-align: left;
+    white-space: nowrap;
+    min-width: fit-content;
+    max-width: fit-content;
+    box-sizing: border-box; /* Tüm kenarlık ve padding'i dahil eder */
+    transition: background-color 0.4s ease-out 10ms 
+}
+
+.card2.hover,
+.card2:hover {
+    background-color: #fafafa; /* Arka plan siyah */
+    color: #0a0a0a; /* Yazı rengi beyaz */
+} 
+
+.card2:hover p,
+.card2.hover p {
+  color: #0a0a0a; /* Yazı rengi beyaz */
+}
+
+.card2 p {
+    margin: 0;
+}
+
   .layout1{
     padding: 30px;
+    position: relative;
+  }
+
+  .layout2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .layout3{
+    padding: 10px;
   }
 
 .d1 {
@@ -132,17 +212,41 @@ a:link {
 	body {
 	  background-color: white;
 	}
-	h1,h2,h3,h4,h5,h6 {
+	h1,h2,h3,h4,h5,h6{
 	  color: black;
 	} 
+
+  p{
+    color: black;
+  }
+
 	.card1 {
 	  background-color: #f2f2f7;
 	} 
+
+  .card2 {
+    border: 0.5px solid #0a0a0a;
+	} 
+
+  .card2.hover,
+.card2:hover {
+    background-color: #0a0a0a; /* Arka plan siyah */
+    color: #fafafa; /* Yazı rengi beyaz */
+} 
+
+.card2:hover p,
+.card2.hover p {
+  color: #fafafa; /* Yazı rengi beyaz */
+}
+
 	.card-body {
 	  background-color: #1c1c1e;
 	}
 	.news-title h2 {
 	  color: white;
+	}
+  .bigtitle {
+	  color: black;
 	}
 	.card-title {
 	  color: black;
