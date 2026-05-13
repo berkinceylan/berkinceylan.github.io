@@ -298,6 +298,7 @@ a:link {
     gap: 20px;
 
 	padding-left: 12px;
+    margin-left: 12px;
     
     /* Sağdaki boşluğu öldüren sihirli dokunuş */
     margin-right: -100vw; /* Sağ tarafa sonsuz bir alan açar gibi düşün */
