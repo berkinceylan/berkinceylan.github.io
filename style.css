@@ -84,6 +84,10 @@ body{
     margin-top: 3px;
   }
 
+    .card-top{
+    margin-top: 3px;
+  }
+
   .card-logo-button {
     color: #0084FF;
     margin-left: 15px;
@@ -95,7 +99,7 @@ body{
     color: #757575;
     margin-left: 15px;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 3px;
   }
 
 .card-subtitle {
@@ -122,6 +126,31 @@ body{
     height: 505px;
     object-fit: cover;
     border-radius: 10px !important;
+  }
+
+  .card-image2 {
+    
+    width: 100%;
+    /* 16:9 oranı (Genişlik 16 birim, Yükseklik 9 birim) */
+    aspect-ratio: 16 / 9; 
+    
+    /* Görselin kutuyu basıklaştırmadan doldurmasını sağlar */
+    object-fit: cover;
+    object-position: center;
+
+    /* Radius ayarları */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    /* Görselin altında oluşabilecek ufak boşluğu siler */
+    display: block;
+  
+  }
+
+  .card-text-new {
+    padding: 10px 20px 20px 10px; 
   }
 
   .card-im {
@@ -262,3 +291,38 @@ a:link {
 	}
   }
   
+.horizontal-scroll-wrapper {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    gap: 20px;
+    
+    /* Sağdaki boşluğu öldüren sihirli dokunuş */
+    margin-right: -100vw; /* Sağ tarafa sonsuz bir alan açar gibi düşün */
+    padding-right: 100vw; /* Ama içeriği korur */
+    
+    /* VEYA daha garantici bir yöntem (önerilen): */
+    width: calc(100% + 50px); /* Konteynırdan biraz daha geniş olmasını sağlar */
+    
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; /* Kaydırırken kartların 'tak' diye oturmasını sağlar */
+}
+
+/* Kaydırma çubuğunu gizle (temiz bir görüntü için) */
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-card-item {
+flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start; /* Kaydırma bittiğinde kartı kenara hizalar */
+}
+
+.card-image2 {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+}
