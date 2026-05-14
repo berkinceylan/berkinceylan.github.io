@@ -171,6 +171,9 @@ body{
     border-radius: 10px;
     background-color: #151515;
     margin-top: 15px;
+	display: flex;
+    flex-direction: column; /* İçeriklerin üstten aşağıya doğru dizilmesi için */
+    width: 100%; /* Genişliği koruması için */
   }
 
   .card2 {
@@ -270,6 +273,7 @@ a:link {
 
 	.card-body {
 	  background-color: #1c1c1e;
+	  flex-grow: 1; /* Sihirli dokunuş: Kartın altındaki boş alanı tamamen doldurur */
 	}
 	.news-title h2 {
 	  color: white;
@@ -317,9 +321,10 @@ a:link {
 }
 
 .custom-card-item {
-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 300px;
     scroll-snap-align: start; /* Kaydırma bittiğinde kartı kenara hizalar */
+	display: flex; /* İçindeki kartın yüksekliği algılamasını sağlar */
 }
 
 .card-image2 {
