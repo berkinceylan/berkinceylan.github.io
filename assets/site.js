@@ -47,30 +47,6 @@
   rail.addEventListener('scroll', updateRail, { passive: true });
   updateRail();
 
-  /* ---------- Intro ---------- */
-  const intro = document.getElementById('intro');
-  let seen = false;
-  try { seen = sessionStorage.getItem('introSeen') === '1'; } catch (e) {}
-
-  const start = () => root.classList.add('ready');
-  if (reduce || seen) {
-    intro.classList.add('gone');
-    start();
-  } else {
-    document.body.classList.add('locked');
-    const finish = () => {
-      if (intro.classList.contains('out')) return;
-      intro.classList.add('out');
-      document.body.classList.remove('locked');
-      setTimeout(start, 250);
-      setTimeout(() => intro.classList.add('gone'), 1300);
-      try { sessionStorage.setItem('introSeen', '1'); } catch (e) {}
-    };
-    setTimeout(finish, 2200);
-    intro.addEventListener('click', finish);
-    window.addEventListener('keydown', finish, { once: true });
-  }
-
   /* ---------- Nav border ---------- */
   const nav = document.getElementById('nav');
   const onScrollNav = () => nav.classList.toggle('scrolled', window.scrollY > 8);
