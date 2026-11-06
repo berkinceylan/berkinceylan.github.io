@@ -4,7 +4,7 @@
 
   /* ---------- Highlights data ---------- */
   const yt = id => ({ img: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`, href: `https://www.youtube.com/watch?v=${id}`, video: true });
-  const local = f => ({ img: `../images/milestones/${f}.jpg` });
+  const local = f => ({ img: `images/milestones/${f}.jpg` });
   const highlights = [
     { date: ['Jun 2025','Haz 2025'], title: ['147K and counting.','147K ve büyüyor.'], text: ['Trial Reels and a new content strategy took Instagram from 29.7K to 147K+ — mostly organic.','Deneme Reels ve yeni içerik stratejisiyle Instagram 29.7K’dan 147K+’ya çıktı — büyük ölçüde organik.'], ...local('deneme-reels') },
     { date: ['May 2025','May 2025'], title: ['An AI music video.','Yapay zekâ ile müzik videosu.'], text: ['Lyrics inspired by AI, animation brought to life by our marketing team.','Sözleri yapay zekâdan ilham aldı, animasyonu pazarlama ekibimizle hayat buldu.'], ...yt('Isyan5myu0A') },
