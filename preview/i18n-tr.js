@@ -8,7 +8,7 @@ window.I18N_TR = {
 
   'hero.eyebrow': 'Kıdemli Sosyal Medya &amp; Influencer Pazarlama Uzmanı · Gedik Yatırım',
   'hero.title': 'Markaları büyüten<br><span class="grad">hikâyeler.</span>',
-  'hero.lead': 'Ben Selhan Berkin Ceylan. İnsanların gerçekten takip etmeyi seçtiği marka, sponsorluk ve içerik üretici programları kuruyor, her birinin sonucunu ölçüyorum.',
+  'hero.lead': 'Ben Selhan Berkin Ceylan. İnsanların gerçekten takip etmeyi seçtiği marka, sosyal medya ve içerik üretici programları kuruyor, her birinin sonucunu ölçüyorum.',
   'hero.cta': 'İletişime geç',
 
   'statement': '29.7K’dan 147K takipçiye. Tek seferde 77K kişi getiren bir Reels. Türkiye’nin en iyi performans gösteren Instagram hesabı. Bu büyüme şans değil — işçilik.',
@@ -16,7 +16,7 @@ window.I18N_TR = {
   'impact.eyebrow': 'Etki',
   'impact.title': 'Konuşmaya değer<br>rakamlar.',
   'stat1': 'Instagram takipçisi; 29.7K’dan büyük ölçüde organik büyüme.',
-  'stat2': 'yeni takipçi, tek bir sponsorluk Reels’inden.',
+  'stat2': 'yeni takipçi, tek bir Reels’ten.',
   'stat3': 'Türkiye’nin en iyi performans gösteren Instagram hesabı. BoomSocial, Nisan 2025.',
   'stat4': 'TikTok izlenmesi tek ayda, 50K+ takipçiyle.',
   'stat5': 'izlenme, Cumhuriyet’in 100. yılı filmimizde.',
@@ -25,8 +25,8 @@ window.I18N_TR = {
   'work.title': 'Tek marka sesi.<br>Her kanalda.',
   't1h': 'Influencer &amp; içerik üretici iş birlikleri',
   't1p': 'Üretici seçimi, brief, performans takibi ve ROI analizi — ilk brief’ten son rapora kadar.',
-  't2h': 'Sponsorluk aktivasyonu',
-  't2p': 'Ulusal spor sponsorluklarını sosyal medya içeriğine ve PR erişimine dönüştürmek.',
+  't2h': 'Kısa video',
+  't2p': 'Trendlere dayalı Reels ve TikTok içerikleri; yeni platform özelliklerini erkenden kullanmak.',
   't3h': 'Marka &amp; topluluk',
   't3p': 'Dört grup şirketinin kanallarını ve topluluğunu tek ve tutarlı bir sesle yönetmek.',
   't4h': 'Entegre kampanyalar',

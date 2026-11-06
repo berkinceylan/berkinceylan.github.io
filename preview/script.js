@@ -6,13 +6,13 @@
   const yt = id => ({ img: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`, href: `https://www.youtube.com/watch?v=${id}`, video: true });
   const local = f => ({ img: `../images/milestones/${f}.jpg` });
   const highlights = [
-    { date: ['Jun 2025','Haz 2025'], title: ['147K and counting.','147K ve büyüyor.'], text: ['Trial Reels and sponsorship content took Instagram from 29.7K to 147K+ — mostly organic.','Deneme Reels ve sponsorluk içerikleriyle Instagram 29.7K’dan 147K+’ya çıktı — büyük ölçüde organik.'], ...local('deneme-reels') },
+    { date: ['Jun 2025','Haz 2025'], title: ['147K and counting.','147K ve büyüyor.'], text: ['Trial Reels and a new content strategy took Instagram from 29.7K to 147K+ — mostly organic.','Deneme Reels ve yeni içerik stratejisiyle Instagram 29.7K’dan 147K+’ya çıktı — büyük ölçüde organik.'], ...local('deneme-reels') },
     { date: ['May 2025','May 2025'], title: ['An AI music video.','Yapay zekâ ile müzik videosu.'], text: ['Lyrics inspired by AI, animation brought to life by our marketing team.','Sözleri yapay zekâdan ilham aldı, animasyonu pazarlama ekibimizle hayat buldu.'], ...yt('Isyan5myu0A') },
     { date: ['Apr 2025','Nis 2025'], title: ['#1 in Turkey.','Türkiye’nin 1 numarası.'], text: ['Gedik Yatırım became the best performing Instagram account in Turkey (BoomSocial).','Gedik Yatırım, Türkiye’nin en iyi performans gösteren Instagram hesabı oldu (BoomSocial).'], ...local('turkiyenin-en-iyisi') },
     { date: ['Mar 2025','Mar 2025'], title: ['100,000 people.','100.000 kişi.'], text: ['Our Instagram community crossed the 100K follower mark.','Instagram topluluğumuz 100 bin takipçi barajını aştı.'], ...local('100k-takipci') },
     { date: ['Dec 2024','Ara 2024'], title: ['#1 in Finance.','Finansta birinci.'], text: ['Top account in the finance category and #27 overall among Turkey’s Instagram accounts.','Türkiye’deki Instagram hesapları arasında finans kategorisinde 1., genelde 27. olduk.'], ...local('birincilik') },
     { date: ['2024','2024'], title: ['TikTok, 50K.','TikTok, 50K.'], text: ['Financial literacy meets trends: 50K+ followers and 17M+ views in a single month.','Finansal okuryazarlık trendlerle buluştu: 50K+ takipçi ve tek ayda 17M+ izlenme.'], ...local('tiktok-50k') },
-    { date: ['Jun 2024','Haz 2024'], title: ['Fully organic.','Tamamen organik.'], text: ['A TikTok from our volleyball sponsorship reached 2.5M+ organic views.','Voleybol sponsorluğumuz için hazırladığımız TikTok içeriği 2.5M+ organik izlenmeye ulaştı.'], ...yt('iL2wLL0MGf4') },
+    { date: ['Jun 2024','Haz 2024'], title: ['Fully organic.','Tamamen organik.'], text: ['A volleyball TikTok we produced reached 2.5M+ organic views.','Hazırladığımız voleybol temalı TikTok içeriği 2.5M+ organik izlenmeye ulaştı.'], ...yt('iL2wLL0MGf4') },
     { date: ['Apr 2024','Nis 2024'], title: ['Millions watching.','Milyonlar izliyor.'], text: ['A vertical series explaining technical analysis with Kıvanç Özbilgiç passed 1M+ views.','Kıvanç Özbilgiç ile teknik analizi anlattığımız dikey video serisi 1M+ izlenmeyi geçti.'], ...local('milyonlar-izliyor') },
     { date: ['Oct 2023','Eki 2023'], title: ['The most valuable paper.','En Değerli Kağıt.'], text: ['Our film for the Republic’s 100th anniversary passed 10M+ views.','Cumhuriyetimizin 100. yılı için hazırladığımız reklam filmi 10M+ izlenmeyi geçti.'], ...yt('cedKAph-6FA') },
     { date: ['Oct 2023','Eki 2023'], title: ['TikTok effect, 3rd place.','TikTok efekt yarışmasında 3.'], text: ['Placed third in TikTok’s effect contest for Republic Day.','TikTok’un 29 Ekim için düzenlediği efekt yarışmasında üçüncü oldum.'], ...local('tiktok-efekt') },
@@ -117,7 +117,7 @@
   const nodes = [...document.querySelectorAll('[data-i18n]')];
   nodes.forEach(n => enStore.set(n, n.innerHTML));
   const meta = { en: [document.title, document.querySelector('meta[name=description]').content],
-                 tr: ['Berkin Ceylan', 'Selhan Berkin Ceylan — Kıdemli Sosyal Medya ve Influencer Pazarlama Uzmanı. Marka pazarlaması, sponsorluk aktivasyonu ve içerik üretici iş birlikleri.'] };
+                 tr: ['Berkin Ceylan', 'Selhan Berkin Ceylan — Kıdemli Sosyal Medya ve Influencer Pazarlama Uzmanı. Marka pazarlaması, influencer pazarlaması ve içerik üretici iş birlikleri.'] };
   const setLang = (next, save) => {
     lang = next === 'tr' ? 'tr' : 'en';
     nodes.forEach(n => { n.innerHTML = lang === 'tr' && TR[n.dataset.i18n] != null ? TR[n.dataset.i18n] : enStore.get(n); });
