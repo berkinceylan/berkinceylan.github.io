@@ -6,7 +6,7 @@ window.I18N_TR = {
   'nav.experience': 'Deneyim',
   'nav.contact': 'İletişim',
 
-  'hero.eyebrow': 'Kıdemli Sosyal Medya &amp; Influencer Pazarlama Uzmanı · Gedik Yatırım',
+  'hero.eyebrow': 'Kıdemli Sosyal Medya &amp; Influencer Pazarlama Uzmanı',
   'hero.title': 'Markaları büyüten<br><span class="grad">hikâyeler.</span>',
   'hero.lead': 'Ben Selhan Berkin Ceylan. İnsanların gerçekten takip etmeyi seçtiği marka, sosyal medya ve içerik üretici programları kuruyor, her birinin sonucunu ölçüyorum.',
   'hero.cta': 'İletişime geç',
